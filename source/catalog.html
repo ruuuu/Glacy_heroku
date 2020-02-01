@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <!--подключаем шрифты -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!--для кроссбраузерности -->
+    <link href="css/style.css" rel="stylesheet"><!-- наш файл-->
+</head>
+
+<body>
+    <header class="main-header container">
+        <!-- флекс контейнер-->
+        <nav class="main-navigation">
+            <!-- флекс элемент, ктрый сам являетяс флекс контейнером-->
+            <div class="wrapper">
+                <!-- флекс элемент, ктрый сам являетяс флекс контейнером-->
+                <a class="logo_small"  href="index.html"><img src="img/gllacy.svg" width="154" height="64" alt="Логотип Глейси"></a> <!-- флекс элемент-->
+                <ul class="site-navigation">
+                    <!-- флекс элемент-->
+                    <li>
+                        <a href="catalog.html" class="catalog_menu_item">Каталог</a>
+                        <ul class="sub-menu">
+                            <li><a href="#1">Новинки</a></li>
+                            <li><a href="#2">Сливочное</a></li>
+                            <li><a href="#3">Щербеты</a></li>
+                            <li><a href="#4">Фруктовый лед</a></li>
+                            <li><a href="#5">Мелорин</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="info.html">Доставка и оплата</a></li>
+                    <li><a href="index.html">О компании</a></li>
+                </ul>
+            </div>
+            <ul class="user-navigation user_navigation_in_catalog_page">
+                <!-- флекс элемент-->
+                <li><a href="" class="for_search_icon"></a></li>
+                <li><a href="info.html" class="button_in_head login_button">Вход</a></li>
+                <li><a href="info.html" class="button_in_head trash_button trash_button_in_catalog_page">2 товара</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="wrapper_for_breadcrumbs_and_phone">
+            <!-- флекс контейнер-->
+            <ul class="breadcrumbs">
+                <!--хлебные крошки  флекс элемент-->
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li class="breadcrumbs-current">Сливочное</li>
+            </ul>
+            <div class="block_search_login_korzina">
+                <!-- флекс элемент-->
+                <p class="info_about_time">C 10 до 20, ежедневно</p>
+                <p class="phone">8 812 450-25-25</p>
+            </div>
+        </div>
+        <h1 class="page_title">Сливочное мороженое</h1>
+        <section class="filters-1">
+            <!-- фильтры- флекс контейнер-->
+            <!-- флекс элемент-->
+            <form method="get" class="filter" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Сортировка:</legend>
+                    <div class="for_select">
+                        <select name="select_list">
+                            <option value="">по популярности</option>
+                            <option value="">сначала недорогие</option>
+                            <option value="">сначала дорогие</option>
+                            <option value="">по жирности</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </form>
+            <form method="get" class="filter" action="https://echo.htmlacademy.ru">
+                <!-- флекс элемент-->
+                <fieldset class="filter-item">
+                    <legend>Цена: 100 руб. – 500 руб.</legend>
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="toggle toggle-min"></div>
+                            <div class="toggle toggle-max"></div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <form method="get" class="filter" action="https://echo.htmlacademy.ru">
+                <!-- флекс элемент-->
+                <fieldset>
+                    <legend>Жирность:</legend>
+                    <ul class="list_of_radiobuttons">
+                        <!--флекс контейнер -->
+                        <li class="filter-option">
+                            <!--флекс элемент -->
+                            <input id="zero" class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="zero_value">
+                            <label for="zero">0%</label>
+                        </li>
+                        <li class="filter-option">
+                            <!--флекс элемент -->
+                            <input id="ten" class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="ten_value" checked><!-- checked -выдеенный радиокнопка-->
+                            <label for="ten">до 10%</label>
+                        </li>
+                        <li class="filter-option">
+                            <!--флекс элемент -->
+                            <input id="forteen" class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="forteen_value">
+                            <label for="forteen">до 30%</label>
+                        </li>
+                        <li class="filter-option">
+                            <!--флекс элемент -->
+                            <input id="moreforteen" class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="moreforteen_value">
+                            <label for="moreforteen">выше 30%</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </section>
+        <section class="filters-2">
+            <!-- фильтры -->
+            <h2 class="visually-hidden">Фильтр мороженых</h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Наполнители:</legend>
+                    <div class="wrap_for_filter">
+                        <!--флекс контейнер -->
+                        <ul class="list_of_checkboxes">
+                            <li class="filter-option">
+                                <!--флекс элемент -->
+                                <input id="for_chokolad" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chokolad" checked>
+                                <label for="for_chokolad">шоколадные</label>
+                            </li>
+                            <li class="filter-option">
+                                <!--флекс элемент -->
+                                <input id="for_sugar_adds" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugars" checked>
+                                <label for="for_sugar_adds">сахарные присыпки</label>
+                            </li>
+                            <li class="filter-option">
+                                <!--флекс элемент -->
+                                <input id="for_fructs" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fructs">
+                                <label for="for_fructs">фрукты</label>
+                            </li>
+                            <li class="filter-option">
+                                <!--флекс элемент -->
+                                <input id="for_sirop" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sirops">
+                                <label for="for_sirop">сиропы</label>
+                            </li>
+                            <li class="filter-option">
+                                <!--флекс элемент -->
+                                <input id="for_jams" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jam">
+                                <label for="for_jams">джемы</label>
+                            </li>
+                        </ul>
+                        <a href="" class="button_in_head apply_button">Применить</a>
+                    </div>
+                </fieldset>
+
+            </form>
+        </section>
+        <section class="catalog">
+            <h1 class="visually-hidden">Список мороженых</h1>
+            <ul class="catalog-list">
+                <!--флекс контейнер -->
+                <li class="catalog-item">
+                    <img src="img/orange.png" width="267" height="267" alt="Первое мороженое">
+                    <div class="price">310 Р<span>/кг</span></div>
+                    <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                    <div class="actions">
+                        <!--появляется кнопка  при наведении-->
+                        <a href="#" class="button button_in_main_page show">Быстрый просмотр</a>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <img src="img/coffee.png" width="267" height="267" alt="Второе мороженое">
+                    <div class="price">310 Р<span>/кг</span></div>
+                    <p>Сливочно-кофейное с кусочками шоколада</p>
+                    <div class="actions">
+                        <!--появляется кнопка  при наведении-->
+                        <a href="#" class="button button_in_main_page show">Быстрый просмотр</a>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <img src="img/strawberry.png" width="267" height="267" alt="Третье мороженое">
+                    <div class="price">310 Р<span>/кг</span></div>
+                    <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+                    <div class="actions">
+                        <!--появляется кнопка  при наведении-->
+                        <a href="#" class="button button_in_main_page show">Быстрый просмотр</a>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <img src="img/cream.png" width="267" height="267" alt="Четвертое мороженое">
+                    <div class="price">310 Р<span>/кг</span></div>
+                    <p>Сливочное крем-брюле с карамельной подливкой</p>
+                    <div class="actions">
+                        <!--появляется кнопка  при наведении-->
+                        <a href="#" class="button button_in_main_page show">Быстрый просмотр</a>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <img src="img/1.png" width="267" height="267" alt="Пятое мороженое">
+                    <div class="price">310 Р<span>/кг</span></div>
+                    <p>Сливочное с брусничным джемом</p>
+                    <div class="actions">
+                        <!--появляется кнопка  при наведении-->
+                        <a href="#" class="button button_in_main_page show">Быстрый просмотр</a>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <img src="img/2.png" width="267" height="267" alt="Шестое мороженое">
+                    <p>Сливочно-черничное с цельными ягодами черники</p>
+                    <div class="actions">
+                        <!--появляется кнопка  при наведении-->
+                        <a href="#" class="button button_in_main_page show">Быстрый просмотр</a>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <img src="img/3.png" width="267" height="267" alt="Седьмое мороженое">
+                    <div class="price">310 Р<span>/кг</span></div>
+                    <p>Сливочно-лимонное с карамельной присыпкой</p>
+                    <div class="actions">
+                        <!--появляется кнопка  при наведении-->
+                        <a href="#" class="button button_in_main_page show">Быстрый просмотр</a>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <img src="img/4.png" width="267" height="267" alt="Восьмое мороженое">
+                    <div class="price">310 Р<span>/кг</span></div>
+                    <p>Сливочное с шоколадной стружкой</p>
+                    <div class="actions">
+                        <!--появляется кнопка  при наведении-->
+                        <a href="#" class="button button_in_main_page show">Быстрый просмотр</a>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <img src="img/5.png" width="267" height="267" alt="Девятое мороженое">
+                    <div class="price">310 Р<span>/кг</span></div>
+                    <p>Сливочно-ванильное с кусочками шоколада</p>
+                    <div class="actions">
+                        <!--появляется кнопка  при наведении-->
+                        <a href="#" class="button button_in_main_page show">Быстрый просмотр</a>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <img src="img/6.png" width="267" height="267" alt="Десятое мороженое">
+                    <div class="price">310 Р<span>/кг</span></div>
+                    <p>Сливочноe с ментоловым сиропом</p>
+                    <div class="actions">
+                        <!--появляется кнопка  при наведении-->
+                        <a href="#" class="button button_in_main_page show">Быстрый просмотр</a>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <img src="img/7%202.png" width="267" height="267" alt="Одинннатдцатое мороженое">
+                    <div class="price">310 Р<span>/кг</span></div>
+                    <p>Сливочное с кусочками черного шоколада</p>
+                    <div class="actions">
+                        <!--появляется кнопка  при наведении-->
+                        <a href="#" class="button button_in_main_page show">Быстрый просмотр</a>
+                    </div>
+                </li>
+                <li class="catalog-item">
+                    <img src="img/8.png" width="267" height="267" alt="Двенадцатодцатое мороженое">
+                    <div class="price">310 Р<span>/кг</span></div>
+                    <p>Сливочное с мятным сиропом </p>
+                    <div class="actions">
+                        <!--появляется кнопка  при наведении-->
+                        <a href="#" class="button button_in_main_page show">Быстрый просмотр</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pagination-list">
+                <!-- пагинация-->
+                <li class="pagination-item pagination-item-current"><a>1</a></li><!-- атрибут href убираем так ак акэто текуща станица-->
+                <li class="pagination-item"><a href="">2</a></li>
+                <li class="pagination-item"><a href="">3</a></li>
+                <li class="pagination-item"><a href="">4</a></li>
+                <li class="pagination-item"><a href="">5</a></li>
+            </ul>
+            <div class="white_line">
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- ПОДВАЛ-->
+        <div class="container">
+            <!-- флекс контейнер-->
+            <ul class="footer-social">
+                <!-- флекс элемент-->
+                <li>
+                    <a href="#" class="social-button twitter">
+                        <span class="visually-hidden">Твиттер</span>
+                        <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-button instagram">
+                        <span class="visually-hidden">Интаграмм</span>
+                        <img src="img/instagram.svg" width="32" height="32" alt="Интаграмм">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-button facebook">
+                        <span class="visually-hidden">Фейсбук</span>
+                        <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-button vk">
+                        <span class="visually-hidden">Вконтакте</span>
+                        <img src="img/vk.svg" width="32" height="32" alt="Вконтакте">
+                    </a>
+                </li>
+            </ul>
+            <div class="wrapper_for_small_link_footer">
+                <!-- флекс элемент котрый самя вляется флекс контейнером-->
+                <div>
+                    <!-- флекс элемент-->
+                    <p class="small_link for_delivery"><a href="">Для поставщиков</a></p>
+                    <p class="small_link"><a href="">О производстве</a></p>
+                </div>
+                <div>
+                    <!-- флекс элемент-->
+                    <p class="small_link"><a href="">Наши документы</a></p>
+                    <p class="small_link"><a href="">Экологичесике стандарты</a></p>
+                </div>
+            </div>
+            <div class="in_html_academy">
+                <!-- флекс элемент-->
+                <a href="index.html"><img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логоти п html академии"></a>
+                <p class="small_link for_link_html_academy">Сделано в HTML Academy © 2019</p>
+            </div>
+        </div>
+    </footer>
+
+    <section class="modal modal-login">
+        <!-- попап(модальное окно) вход в Личный кабинет-->
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="user-login" class="visually-hidden">Логин</label>
+                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Электорнная почта">
+            </p>
+            <p>
+                <label for="user-password" class="visually-hidden">Пароль</label>
+                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <div class="login-help">
+                <!-- флекс контейнер-->
+                <button class="button button_radius" type="submit">Войти</button>
+                <div class="wrapper_for_links">
+                    <p><a class="restore" href="">Забыли пароль?</a></p>
+                    <p><a class="restore" href="">Новая регистрация</a></p>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="modal modal_goods">
+        <!--выпадающее  поле поиска принажатии на лупу-->
+        <div class="good">
+            <!-- флекс контейнер-->
+            <!-- крестик-->
+            <!-- иконка момроженого-->
+            <span class="name_of_ice_cream_first">Пломбир с апельсиновым джемом </span>
+            <!--флекс элемент-->
+            <span>1,5 кг х <span class="grey_price">200 руб.</span></span>
+            <!--флекс элемент-->
+            <span>300 руб.</span>
+            <!--флекс элемент-->
+        </div>
+        <div class="good">
+            <!-- флекс контейнер-->
+            <!-- крестик-->
+            <!-- иконка момроженого-->
+            <span class="name_of_ice_cream_first name_of_ice_cream_second">Клубничный пломбир с присыпкой
+                из белого шоколада </span>
+            <!--флекс элемент-->
+            <span>1,5 кг х <span class="grey_price">200руб.</span></span>
+            <!--флекс элемент-->
+            <span>300 руб.</span>
+            <!--флекс элемент-->
+        </div>
+        <div class="line_grey"></div><!-- горизонтаьная серая черта-->
+        <div class="summary_price">
+            Итого: 75000 руб.
+        </div>
+        <button class="button make_order" type="submit">Оформить заказ</button><!-- make_order нужен для js-->
+    </section>
+    
+    
+    
+   <script>
+        var link_but = document.querySelector(".login_button"); /*кнопка Вход(в меню)*/
+        var popup_login = document.querySelector(".modal-login"); //нашли элт с классом.modal-login , окно Логина 
+
+
+
+        link_but.addEventListener("click", function(evt) { //ловит событие клик по кнопке Вход(в меню) link_but
+
+            evt.preventDefault(); //отменеям стан дейтсвие
+
+            popup_login.classList.add("modal-show"); //к элту с классом .modal-login добавит класс modal-show , тгда по нажатиюна кнопку Вход, окно авторизации отобразится
+
+        });
+        
+        
+        var Voity_button = popup_login.querySelector(".button_radius") //нашли кнопку Войти в попапе Логина
+        Voity_button.addEventListener("click", function(evt) { //ловит событие клика по кнопке Войти в поапе Логина
+
+            evt.preventDefault(); //отменеям стандарт дейтсвие
+
+            popup_login.classList.remove("modal-show"); //закрывет окно popup_login при нажати на кнопку Войти
+
+        });
+
+
+        
+
+        var trash_button = document.querySelector(".trash_button"); /*находит кнопку с класом .trash_button  Корзина(в меню)*/
+        var popup_goods = document.querySelector(".modal_goods"); // окно с морожеными
+
+        trash_button.addEventListener("click", function(evt) { //ловит событие клик по кнопке Корзина trash_button
+
+            evt.preventDefault(); //отменеям стандарт дейтсвие
+
+            popup_goods.classList.add("modal-show"); //к элту с классом .modal_goods добавит класс modal-show , тгда по нажатиюна кнопку Корзина, окно с морожеными откроется
+
+        });
+
+
+
+        var make_order_button = popup_goods.querySelector(".make_order"); // нашшли кнопку Оформить заказ в окне popup_goods(не надо исктаь по всему документы document)
+
+        make_order_button.addEventListener("click", function(evt) { //ловит событие клика по кнопке Оофрмить заказ
+
+            evt.preventDefault(); //отменеям стандарт дейтсвие
+
+            popup_goods.classList.remove("modal-show"); //закрывет окно popup_goods принажати на кнопку Оофрмить заказ
+
+        });
+
+
+
+       
+
+        var search_button = document.querySelector(".for_search_icon"); //кнопка Поиска
+        var popup_search = document.querySelector(".search_pop"); //окно с полем поиска
+
+        search_button.addEventListener("click", function(evt) {
+            evt.preventDefault(); //отменеям стандарт дейтсвие
+            popup_search.classList.add("modal-show"); // к окну popup_search добавляем класс
+
+
+
+        });
+
+        search_button.addEventListener("click", function(evt) {
+            evt.preventDefault(); //отменеям стандарт дейтсвие
+
+
+            popup_search.classList.remove("modal-show");
+
+        });
+
+
+
+
+        var write_us_button = document.querySelector(".map_button"); // кнопка Форма обртаной связи
+        var popup_write_us = document.querySelector(".modal_we_write_us"); //окно Мы свяжемся с вами
+
+        write_us_button.addEventListener("click", function(evt) {
+            evt.preventDefault(); //отменеям стандарт дейтсвие
+            popup_write_us.classList.add("modal-show"); // по нажатию на кнопку Форма обртаной связи(write_us_button), откроется окно opup_write_us
+        });
+
+
+
+        var close_button = popup_write_us.querySelector(".modal-close"); //кнпока закрытия (Крестик) у окна .modal_we_write_us
+
+        close_button.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup_write_us.classList.remove("modal-show"); // по нажаьтии на крестик, окно  Форма братной связи (popup_write_us) убертся, то есть класс modal-show у окна удалится
+        });
+
+
+
+        let forms = document.querySelector(".email_form"); //форма отправки
+        let message = document.querySelector(".report_for_send_email"); //тэг p
+
+        let email = document.querySelector(".input_email"); //поле ввода емейл(input) 
+
+        forms.onsubmit = function(event) { //после отправик формы forms отобразится сообщеие message
+            event.preventDefault();
+            // Измените значение textContent на следующей строке
+            message.textContent = 'Адрес ' + email.value + ' добавлен в список получателей рассылки.';
+        };
+
+    </script>
+</body>
+
+</html>

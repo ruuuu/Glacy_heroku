@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=latin,cyrillic" rel="stylesheet">
+    <!--подключаем шрифты -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!--для кроссбраузерности-->
+    <link href="css/style.css" rel="stylesheet"><!-- наш файл-->
+</head>
+
+<body>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <div class="site-wrapper">
+        <header class="main-header container">
+            <!-- флекс контейнер-->
+            <nav class="main-navigation">
+                <!-- флекс элемент, ктрый сам являетяс флекс контейнером-->
+                <div class="wrapper">
+                    <!-- флекс элемент, ктрый сам являетяс флекс контейнером-->
+                    <a class="logo_small" href="index.html"><img src="img/gllacy.svg" width="154" height="64" alt="Логотип Глейси"></a> <!-- флекс элемент-->
+                    <ul class="site-navigation">
+                        <!-- флекс элемент котрый сам является флекс контейнером-->
+                        <li>
+                            <a href="catalog.html">Каталог</a>
+                            <ul class="sub-menu">
+                                <li><a href="#1">Новинки</a></li>
+                                <li><a href="#2">Сливочное</a></li>
+                                <li><a href="#3">Щербеты</a></li>
+                                <li><a href="#4">Фруктовый лед</a></li>
+                                <li><a href="#5">Мелорин</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="info.html">Доставка и оплата</a></li>
+                        <li><a href="info.html">О компании</a></li>
+                    </ul>
+                </div>
+                <ul class="user-navigation">
+                    <!-- флекс элемент, котрый сам является флекс контейнером-->
+                    <li><a href="" class="for_search_icon"></a></li>
+                    <li><a href="info.html" class="button_in_head login_button">Вход</a></li>
+                    <li><a href="info.html" class="button_in_head trash_button">Пусто</a></li>
+                </ul>
+            </nav>
+            <div class="block_search_login_korzina">
+                <!-- флекс элемент-->
+                <p class="info_about_time">C 10 до 20, ежедневно</p>
+                <p class="phone">8 812 450-25-25</p>
+            </div>
+        </header>
+        <section class="slider container">
+            <div class="slider-controls">
+                <label for="product-1">Первый</label>
+                <label for="product-2">Второй</label>
+                <label for="product-3">Третий</label>
+            </div>
+            <ul class="slider-list">
+                <li class="slider-item slide" id="slide1">
+                    <!--первый сладйер -->
+                    <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+                    <a class="button  button_on_slider slide-button" href="#">Давайте оба!</a>
+                </li>
+                <li class="slider-item slide" id="slide2">
+                    <!--второй сладйер -->
+                    <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+                    <a class="button  button_on_slider slide-button" href="#">Давайте оба!</a>
+                </li>
+                <li class="slider-item slide" id="slide3">
+                    <!--трретий сладйер -->
+                    <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+                    <a class="button  button_on_slider slide-button" href="#">Давайте оба!</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <main class="container">
+        <div class="index-columns">
+            <!-- флкекс контейнер-->
+            <section class="blog first_blog">
+                <!-- флекс элемент-->
+                <div class="example2">
+                    <img src="img/invalid-name.png" width="560" height="229" alt="малинка">
+                    <h2>Малинка даром!</h2>
+                    <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно. </p>
+                    <a href="#" class="button">Хочу варенье! </a>
+                </div>
+            </section>
+            <section class="blog second_blog">
+                <!-- флекс элемент-->
+                <div class="example2">
+                    <img src="img/invalid-name%202.png" width="560" height="229" alt="кофе">
+                    <h2>Шоколадки даром!</h2>
+                    <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                    <a href="#" class="button">Хочу шоколадки!</a>
+                </div>
+            </section>
+
+        </div>
+
+        <ul class="catalog-list catalog-list-on-main-page">
+            <li class="catalog-item catalog-item-on-main-page">
+                <img src="img/orange.png" width="267" height="267" alt="Первое мороженое">
+                <div class="price">310 Р<span>/кг</span></div>
+                <p>Сливочное с апельсиновым джемом и цитрусовой стружкой </p>
+                <div class="actions">
+                    <!--появляется кнопка  при наведении-->
+                    <a href="#" class="button show">Быстрый просмотр</a>
+                </div>
+            </li>
+            <li class="catalog-item catalog-item-on-main-page">
+                <img src="img/coffee.png" width="267" height="267" alt="Второе мороженое">
+                <div class="price">380 Р<span>/кг</span></div>
+                <p>Сливочно-кофейное с кусочками шоколада</p>
+                <div class="actions">
+                    <!--появляется кнопка  при наведении-->
+                    <a href="#" class="button  show">Быстрый просмотр</a>
+                </div>
+            </li>
+            <li class="catalog-item catalog-item-on-main-page">
+                <img src="img/strawberry.png" width="267" height="267" alt="Третье мороженое">
+                <div class="price">355 Р<span>/кг</span></div>
+                <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+                <div class="actions">
+                    <!--появляется кнопка  при наведении-->
+                    <a href="#" class="button show">Быстрый просмотр</a>
+                </div>
+            </li>
+            <li class="catalog-item catalog-item-on-main-page">
+                <img src="img/cream.png" width="267" height="267" alt="Четвертое мороженое">
+                <div class="price">415 Р<span>/кг</span></div>
+                <p>Сливочное крем-брюле с карамельной подливкой</p>
+                <div class="actions">
+                    <!--появляется кнопка  при наведении-->
+                    <a href="#" class="button show">Быстрый просмотр</a>
+                </div>
+            </li>
+        </ul>
+
+        <section class="info_about_shop">
+            <img src="img/invalid-name_vafla.png" width="1146" height="306" alt="вафля">
+            <h4>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
+            </h4>
+            <div class="text_blocks">
+                <p>
+                    Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+                </p>
+                <p>
+                    Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+                </p>
+                <p>
+                    Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+                </p>
+                <p>
+                    Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+                </p>
+            </div>
+        </section>
+
+        <div class="index-columns">
+            <!-- флекс контенер-->
+            <section class="blog three_blog">
+                <!-- флекс элемент-->
+                <div class="example2">
+                    <img src="img/for_third_block.png" width="560" height="220" alt="о 10 способах">
+                    <p class="new_in_our_blog">Новое в нашем блоге</p>
+                    <h2 class="ten_ways_services">10 способов сервировки фруктовых щербетов к столу</h2>
+                </div>
+            </section>
+            <section class="blog four_blog">
+                <!-- флекс элемент-->
+                <div class="wrapper_for_four_blog">
+                    <p>
+                        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+                    </p>
+
+                    <form action="https://echo.htmlacademy.ru/courses" method="post" class="email_form">
+                        <!-- /*флекс контейнер*/-->
+                        <label for="email_field" class="visually-hidden">Поле email</label>
+                        <input id="email_field" type="text" name="email" placeholder="Электронная почта" class="input_email">
+                        <button type="submit" class="button">Отправить</button>
+                    </form>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="map">
+        <!-- карта-->
+        <img src="img/map_big.png" width="2604" height="430" alt="Карта">
+        <div class="block_with_info_om_map">
+            <!-- блок с инфой котрый будет на карте-->
+            <div class="wrapper_for_text">
+                <p>
+                    Адрес главного офиса
+                    и офлайн-магазина:
+                </p>
+                <p>
+                    ул. Большая Конюшенная 19/8, Санкт-Петербург
+                </p>
+                <p>
+                    Для заказов по телефону:
+                </p>
+                <p>8 812 450-25-25</p>
+                <p>(с 10 до 20 ежедневно)</p>
+            </div>
+            <a href="" class="button map_button">Форма обратной связи</a>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <!-- ПОДВАЛ-->
+        <div class="container">
+            <!-- флекс контейнер-->
+            <ul class="footer-social">
+                <!-- флекс элемент-->
+                <li>
+                    <a href="#" class="social-button twitter">
+                        <span class="visually-hidden">Твиттер</span>
+                        <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-button instagram">
+                        <span class="visually-hidden">Интаграмм</span>
+                        <img src="img/instagram.svg" width="32" height="32" alt="Интаграмм">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-button facebook">
+                        <span class="visually-hidden">Фейсбук</span>
+                        <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-button vk">
+                        <span class="visually-hidden">Вконтакте</span>
+                        <img src="img/vk.svg" width="32" height="32" alt="Вконтакте">
+                    </a>
+                </li>
+            </ul>
+            <div class="wrapper_for_small_link_footer">
+                <!-- флекс элемент котрый самя вляется флекс контейнером-->
+                <div>
+                    <!-- флекс элемент-->
+                    <p class="small_link for_delivery"><a href="">Для поставщиков</a></p>
+                    <p class="small_link"><a href="">О производстве</a></p>
+                </div>
+                <div>
+                    <!-- флекс элемент-->
+                    <p class="small_link"><a href="">Наши документы</a></p>
+                    <p class="small_link"><a href="">Экологичесике стандарты</a></p>
+                </div>
+            </div>
+            <div class="in_html_academy">
+                <!-- флекс элемент-->
+                <a href="index.html"><img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логоти п html академии"></a>
+                <p class="small_link for_link_html_academy">Сделано в HTML Academy © 2019</p>
+            </div>
+        </div>
+    </footer>
+
+    <section class="modal modal-login">
+        <!-- попап(модальное окно) вход в Личный кабинет-->
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="user-login" class="visually-hidden">Логин</label>
+                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Электорнная почта">
+            </p>
+            <p>
+                <label for="user-password" class="visually-hidden">Пароль</label>
+                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <div class="login-help">
+                <!-- флекс контейнер-->
+                <button class="button button_radius" type="submit">Войти</button>
+                <div class="wrapper_for_links">
+                    <p><a class="restore" href="">Забыли пароль?</a></p>
+                    <p><a class="restore" href="">Новая регистрация</a></p>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+    <section class="modal modal_we_write_us">
+        <!--попап "Мы обязательно вам ответим"-->
+        <form class="we_write_us" action="https://echo.htmlacademy.ru" method="post">
+            <h3>Мы обязательно вам ответим!</h3>
+            <p>
+                <label class="visually-hidden" for="user-name">Как вас зовут</label>
+                <input id="user-name" type="text" name="login_l" placeholder="Как вас зовут?">
+            </p>
+            <p>
+                <label class="visually-hidden" for="user-email">Емейл</label>
+                <input id="user-email" type="text" name="email" placeholder="Ваша почта для ответа">
+            </p>
+            <p>
+                <label class="visually-hidden" for="user-text">Напишите что-нибудь</label>
+                <textarea id="user-text" placeholder="Напишите что-нибудь..." name="area-text"></textarea>
+            </p>
+            <button type="submit" class="button">
+                Отправить
+            </button>
+        </form>
+        <button class="modal-close" type="button">
+            <span class="visually-hidden">Закрыть</span> <!-- крестик вверху(чтобы закрыть)-->
+        </button>
+    </section>
+
+
+
+
+
+    <section class="modal search_pop">
+        <!--выпадающее  поле поиска при нажатии на лупу-->
+        <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="search" type="text" placeholder="Что ищем?">
+        </form>
+    </section>
+
+    <section class="modal modal_goods">
+        <!-- попап с  выбраными морожеными в коризну-->
+        <div class="good">
+            <!-- флекс контейнер-->
+            <!-- крестик-->
+            <!-- иконка момроженого-->
+            <span class="name_of_ice_cream_first">Пломбир с апельсиновым джемом  Пломбир с апельсиновым джемомПломбир с апельсиновым джемом</span>
+            <!--флекс элемент-->
+            <span>1,5 кг х <span class="grey_price">20000 руб.</span> </span>
+            <!--флекс элемент-->
+            <span>300руб.</span>
+            <!--флекс элемент-->
+        </div>
+        <div class="good">
+            <!-- флекс контейнер-->
+            <!-- крестик-->
+            <!-- иконка момроженого-->
+            <span class="name_of_ice_cream_first name_of_ice_cream_second">Клубничный пломбир с присыпкой
+                из белого шоколада  лубничный пломбир с присыпкой
+                из белого шоколадалубничный пломбир с присыпкой
+                из белого шоколада</span>
+            <!--флекс элемент-->
+            <span>1,5 кг х <span class="grey_price">20000 руб.</span></span>
+            <!--флекс элемент-->
+            <span>300руб.</span>
+            <!--флекс элемент-->
+        </div>
+        <div class="line_grey"></div><!-- горизонтаьная серая черта-->
+        <div class="summary_price">
+            Итого: 750000 руб.
+        </div>
+        <button class="button make_order" type="submit">Оформить заказ</button>
+    </section>
+
+    <script>
+        var link_but = document.querySelector(".login_button"); /*кнопка Вход(в меню)*/
+        var popup_login = document.querySelector(".modal-login"); //нашли элт с классом.modal-login , окно Логина 
+
+
+
+        link_but.addEventListener("click", function(evt) { //ловит событие клик по кнопке Вход(в меню) link_but
+
+            evt.preventDefault(); //отменеям стан дейтсвие
+
+            popup_login.classList.add("modal-show"); //к элту с классом .modal-login добавит класс modal-show , тгда по нажатиюна кнопку Вход, окно авторизации отобразится
+
+        });
+        
+        
+        var Voity_button = popup_login.querySelector(".button_radius") //нашли кнопку Войти в попапе Логина
+        Voity_button.addEventListener("click", function(evt) { //ловит событие клика по кнопке Войти в поапе Логина
+
+            evt.preventDefault(); //отменеям стандарт дейтсвие
+
+            popup_login.classList.remove("modal-show"); //закрывет окно popup_login при нажати на кнопку Войти
+
+        });
+
+
+        
+
+        var trash_button = document.querySelector(".trash_button"); /*находит кнопку с класом .trash_button  Корзина(в меню)*/
+        var popup_goods = document.querySelector(".modal_goods"); // окно с морожеными
+
+        trash_button.addEventListener("click", function(evt) { //ловит событие клик по кнопке Корзина trash_button
+
+            evt.preventDefault(); //отменеям стандарт дейтсвие
+
+            popup_goods.classList.add("modal-show"); //к элту с классом .modal_goods добавит класс modal-show , тгда по нажатиюна кнопку Корзина, окно с морожеными откроется
+
+        });
+
+
+
+        var make_order_button = popup_goods.querySelector(".make_order"); // нашшли кнопку Оформить заказ в окне popup_goods(не надо исктаь по всему документы document)
+
+        make_order_button.addEventListener("click", function(evt) { //ловит событие клика по кнопке Оофрмить заказ
+
+            evt.preventDefault(); //отменеям стандарт дейтсвие
+
+            popup_goods.classList.remove("modal-show"); //закрывет окно popup_goods принажати на кнопку Оофрмить заказ
+
+        });
+
+
+
+       
+
+        var search_button = document.querySelector(".for_search_icon"); //кнопка Поиска
+        var popup_search = document.querySelector(".search_pop"); //окно с полем поиска
+
+        search_button.addEventListener("click", function(evt) {
+            //evt.preventDefault(); //отменеям стандарт дейтсвие
+            popup_search.classList.add("modal-show"); // к окну popup_search добавляем класс
+
+
+
+        });
+
+        search_button.addEventListener("click", function(evt) {
+            //evt.preventDefault(); //отменеям стандарт дейтсвие
+
+
+            popup_search.classList.remove("modal-show");
+
+        });
+
+
+
+
+        var write_us_button = document.querySelector(".map_button"); // кнопка Форма обртаной связи
+        var popup_write_us = document.querySelector(".modal_we_write_us"); //окно Мы свяжемся с вами
+
+        write_us_button.addEventListener("click", function(evt) {
+            evt.preventDefault(); //отменеям стандарт дейтсвие
+            popup_write_us.classList.add("modal-show"); // по нажатию на кнопку Форма обртаной связи(write_us_button), откроется окно opup_write_us
+        });
+
+
+
+        var close_button = popup_write_us.querySelector(".modal-close"); //кнпока закрытия (Крестик) у окна .modal_we_write_us
+
+        close_button.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup_write_us.classList.remove("modal-show"); // по нажаьтии на крестик, окно  Форма братной связи (popup_write_us) убертся, то есть класс modal-show у окна удалится
+        });
+
+
+
+        let forms = document.querySelector(".email_form"); //форма отправки
+        let message = document.querySelector(".report_for_send_email"); //тэг p
+
+        let email = document.querySelector(".input_email"); //поле ввода емейл(input) 
+
+        forms.onsubmit = function(event) { //после отправик формы forms отобразится сообщеие message
+            event.preventDefault();
+            // Измените значение textContent на следующей строке
+            message.textContent = 'Адрес ' + email.value + ' добавлен в список получателей рассылки.';
+        };
+
+    </script>
+</body>
+
+</html>
